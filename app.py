@@ -13,7 +13,7 @@ CORS(app)
 global graph
 graph = tf.get_default_graph()
 
-model = load_model('../saved_models/model_drop_9351.h5')
+model = load_model('saved_models/model_drop_9351.h5')
 print('----------Model loaded----------')
 
 word_index = keras.datasets.imdb.get_word_index()
