@@ -47,7 +47,7 @@ def index():
             score = predict(request.form['description'])
         data = request.form['description']
         score2 = round(score,3)
-        sleep(2)
+        score = str(round(score,5))+'%'
         return render_template('report.html',score2=score2, score=str(score), data=data)
     else:
         return render_template('report.html',score=str(score))
